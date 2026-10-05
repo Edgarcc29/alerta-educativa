@@ -1,0 +1,34 @@
+# ── Python / Backend ──────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Variables de entorno (contienen contraseñas — NUNCA subir)
+backend/.env
+
+# Modelo ML entrenado (archivo grande, se regenera con ejecutar_ml.py)
+backend/app/ml/modelo_riesgo.joblib
+
+# ── Node / Frontend ────────────────────────────────────────────
+frontend/alerta-educativa/node_modules/
+frontend/alerta-educativa/dist/
+frontend/alerta-educativa/.vite/
+
+# ── Sistema operativo ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDEs ───────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
