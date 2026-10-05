@@ -1,0 +1,34 @@
+/* Estilos base — Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables globales de la plataforma */
+:root {
+  --color-primary: #1a56db;
+  --color-alto:    #ef4444;
+  --color-medio:   #f59e0b;
+  --color-bajo:    #10b981;
+}
+
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+/* Estilo compartido para las tarjetas KPI */
+.kpi-card {
+  @apply bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col gap-1;
+}
+
+/* Barra de scroll fina */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { @apply bg-gray-100; }
+::-webkit-scrollbar-thumb { @apply bg-gray-300 rounded; }
+
+/* Clases utilitarias para badges de riesgo */
+.badge-alto  { @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-red-100 text-red-700; }
+.badge-medio { @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-yellow-100 text-yellow-700; }
+.badge-bajo  { @apply inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-green-100 text-green-700; }
+
+/* Fix para que el mapa de Leaflet ocupe bien el espacio */
+.leaflet-container { height: 100%; width: 100%; }
